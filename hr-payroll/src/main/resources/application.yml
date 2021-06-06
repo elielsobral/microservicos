@@ -24,7 +24,7 @@ management:
         api-key: xxxxxxxxxxxxxxxxxxxxx
         account-id: xxxxx
         step: 1m
- 
+        
 resilience4j.circuitbreaker:
   instances:
     add:
