@@ -25,3 +25,14 @@ spring:
       hibernate:
         format_sql: true
     show-sql: true
+  config:
+    import: optional:configserver:http://localhost:8888/
+  profiles:
+    active:
+    - test
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
